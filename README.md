@@ -27,7 +27,7 @@ SO THAT my website can handle large amounts of unstructured data
 ## Installation
 
 - Npm install
-- Npm seed run
+- Npm run seed
 - Npm start
 
 ## License
