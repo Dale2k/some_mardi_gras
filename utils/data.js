@@ -58,15 +58,16 @@ const names = [
 const descriptionsBodies = [
   "How to disagree with someone",
   "iPhone review",
-  "how-to video",
-  "video essay on the history of video games",
+  "how to do it all",
+  "Essay on the history of the world",
   "How to make money on the App Store",
-  "Learn NextJS in five minutes (Not clickbate)",
+  "Learn NextJS in five minutes.",
   "Movie trailer",
   "Hello world",
   "Another possible solution to the algorithm",
-  "Apology video",
-  "Submission for startup pitch",
+  "Another Sunset",
+  "Another Sunrise",
+  "Not a starting pitcher",
 ];
 
 const possibleResponses = [
@@ -74,9 +75,9 @@ const possibleResponses = [
   "I tried your algorithm, here were the results",
   "This was awesome",
   "Thank you for the great content",
-  "Please check out my video response",
+  "Please check out my opinion",
   "Like and subscribe to my channel please",
-  "Reply: The side effects of in app purchases on digital marketplaces",
+
 ];
 
 const users = [];
