@@ -93,9 +93,7 @@ const getRandomThoughts = (int) => {
   let results = [];
   for (let i = 0; i < int; i++) {
     results.push({
-      published: Math.random() < 0.5,
-      description: getRandomArrItem(descriptionsBodies),
-      advertiserFriendly: Math.random() < 0.5,
+      thoughtText: getRandomArrItem(descriptionsBodies),
       responses: [...getThoughtReactions(3)],
     });
   }
