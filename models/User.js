@@ -6,26 +6,26 @@ const userSchema = new Schema(
     username: {
       type: String,
       required: true,
-      //unique
-      //trimmed
+      unique: true,
+      trim: true,
     },
     email: {
       type: String,
       required: true,
-//validation
-// unique
+      unique: true,
+      match: [/.+@.+\..+/, "Must be an email address!"],
     },
 
     thoughts: [
       {
         type: Schema.Types.ObjectId,
-        ref: "thought", //ref 'thought'
+        ref: "Thought", //ref 'thought'
       },
     ],
     friends: [
       {
         type: Schema.Types.ObjectId,
-        ref: "user", //self reference
+        ref: "User", //self reference
       },
     ],
   },
