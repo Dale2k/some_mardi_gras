@@ -78,12 +78,12 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Add a thought response
+  
   async addThoughtReaction(req, res) {
     try {
       const thought = await Thought.findOneAndUpdate(
         { _id: req.params.thoughtId },
-        { $addToSet: { reactions: req.body } }, //? response: req.body?
+        { $addToSet: { reactions: req.body } },
         { runValidators: true, new: true }
       );
 
@@ -96,7 +96,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Remove thought response
+  
   async removeThoughtReaction(req, res) {
     try {
       const thought = await Thought.findOneAndUpdate(

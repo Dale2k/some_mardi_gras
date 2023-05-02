@@ -12,7 +12,7 @@ connection.once("open", async () => {
   const users = [];
   const thoughts = getRandomThoughts(10);
 
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 10; i++) {
     const fullName = getRandomName();
     const username = fullName;
     const email = `${fullName.split(" ")[1]}@yahoo.com`;

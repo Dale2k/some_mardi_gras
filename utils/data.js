@@ -12,16 +12,6 @@ const names = [
   "Aazaan",
   "Abaan",
   "Abbas",
-  "Abdallah",
-  "Abdalroof",
-  "Abdihakim",
-  "Abdirahman",
-  "Abdisalam",
-  "Abdul",
-  "Abdul-Aziz",
-  "Abdulbasir",
-  "Abdulkadir",
-  "Abdulkarem",
   "Ze",
   "Zechariah",
   "Zeek",
@@ -76,7 +66,7 @@ const possibleResponses = [
   "This was awesome",
   "Thank you for the great content",
   "Please check out my opinion",
-  "Like and subscribe to my channel please",
+  "Comment if you find useful",
 
 ];
 
