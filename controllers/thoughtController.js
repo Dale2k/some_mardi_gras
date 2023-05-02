@@ -30,6 +30,7 @@ module.exports = {
         { _id: req.body.userId },
         { $addToSet: { thoughts: thought._id } },
         { new: true }
+        //_id = Id
       );
 
       if (!user) {
@@ -72,18 +73,6 @@ module.exports = {
         return res.status(404).json({ message: "No thought with this id!" });
       }
 
-      const user = await User.findOneAndUpdate(
-        { thoughts: req.params.thoughtId },
-        { $pull: { thoughts: req.params.thoughtId } },
-        { new: true }
-      );
-
-      if (!user) {
-        return res
-          .status(404)
-          .json({ message: "Thought created but no user with this id!" });
-      }
-
       res.json({ message: "Thought successfully deleted!" });
     } catch (err) {
       res.status(500).json(err);
@@ -112,7 +101,7 @@ module.exports = {
     try {
       const thought = await Thought.findOneAndUpdate(
         { _id: req.params.thoughtId },
-        { $pull: { reactions: { reactionId: req.params.reactionId } } }, // responseId ??
+        { $pull: { reactions: { reactionId: req.params.reactionId } } }, //
         { runValidators: true, new: true }
       );
 
